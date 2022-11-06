@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
+html {
+	scroll-behavior: smooth;
+}
+
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    
+}
+
+a:visited, a:link, a:active, a:hover {
+    text-decoration: none!important;
+    color: black;
+}
+
+
+
+header {    
+    position: fixed;
+    width: 100vw;
+    background-color: white;
+}
+
+nav {
+    padding-right: 50px;
+    border: 1px solid black;
+    height: 60px;
+    display:flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+nav ul *{
+        display: inline-block;  
+        margin: 10px;     
+}
+
+main {
+    /* padding-top: 60px; */
+}
+
+section {
+    padding: 0px;
+    margin: 0px;
+}
+
+section * {
+    border: 1px solid black;
+}
+
+#sobre {
+    padding-left: 100px;
+    padding-top: 60px;
+    border: 1px solid red;
+    background-color: rgba(255, 0, 0, 0.1);
+    height: 85vh;
+    display: flex;
+    align-items: center;
+    text-align: justify;
+}
+
+#sobre article p {
+    width: 50%;
+}
+
+#solucoes {
+    /* padding-left: 100px; */
+    padding-top: 60px;
+    border: 1px solid green;
+    background-color:  rgba(0, 255, 0, 0.1);;
+    height: 85vh;
+    /* display: flex;
+    align-items: center;
+    text-align: justify; */
+}
+
+#solucoes h1 {
+    text-align: center;
+}
+
+#solucoes article p {
+    /* width: 50%; */
+}
+
+#solucoes .collection {
+    display: flex;
+    align-items: center;
+    text-align: justify;
+
+}
+
+
+#portifolio {
+    padding: 20px;
+    padding-top: 60px;
+    border: 1px solid yellow;
+    background-color: rgba(238, 234, 24, 0.1);
+    height: 85vh;
+}
+
+#contato {
+    padding: 20px;
+    padding-top: 60px;
+    border: 1px solid purple;
+    background-color: rgba(248, 6, 248, 0.1);
+    height: 85vh;
+}
+
+.box {
+    margin: 10px;
+    padding: 1em;
+    border: 1px solid white;
+    /* border-radius: 20px; */
+    height: 25rem;
+    background-color: white;
+
+}
