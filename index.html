@@ -4,6 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/style.css">
     <title>HUMA</title>
 </head>
@@ -22,31 +26,90 @@
     <main>
         <section id="sobre">
             <article>
-                <h1>Sobre</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro, molestiae tenetur quia est, id maxime provident consectetur ducimus illo rerum voluptatem laudantium adipisci doloremque minus nobis magnam distinctio quibusdam corrupti.
-                Illo reprehenderit magnam alias hic eius earum perspiciatis nihil corrupti nostrum sint quae et nobis, saepe laborum qui esse laudantium iure maiores sunt voluptates at obcaecati inventore! Sint, vitae laudantium?
-                Maiores quis cumque nulla, corrupti id in ipsum veniam magni odit eos atque eius ratione aperiam a harum voluptas! Dignissimos deleniti quibusdam porro sapiente pariatur, odit dolorum harum necessitatibus recusandae.</p>
+                <h1><span>HUMA</span></h1>
+                <p><span>Somos a HUMA ENGENHARIA E CONSULTORIA, empresa atuante nas áreas de Meio Ambiente e Segurança do Trabalho, com sede em São Paulo e atendimento em todo o território nacional.</span></p>
+                <!-- <br><br> Através de muita dedicação, em 2022, um momento que o Brasil (e o mundo) se recupera de uma pandemia que forçou a sociedade a se repensar e a se recriar, grandes parcerias se juntaram, e deram início ao projeto HUMA. -->
+                <!-- <br><br> Somos uma equipe que possui ideias e ideais. Pensamos além da relação corporativa. Estamos sempre em busca de parcerias, valores e princípios. Muito além de aspectos financeiros, o que nos move são os fatores HUMAnos. -->
+                <p><span> Nossa Missão: Proporcionar às empresas e às pessoas um ambiente seguro, agradável e com qualidade, onde a cultura de segurança passe a ser objeto que agregue valor aos negócios.</span></p>
+                <p><span> Nossa Visão: Ser referência na transformação do ambiente organizacional, visando proporcionar soluções seguras e ambientalmente sustentáveis, transformando ideias e atitudes, sempre de forma responsável e íntegra.</span></p>
             </article>
         </section>
         <section id="solucoes">
+            
             <h1>Soluções</h1>
-            <div class="collection">
+            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                  <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                  <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                </ol>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <div class="collection">
+                    <div class="box">
+                        <article>
+                            <p>Engenharia <br><br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum nam aspernatur possimus necessitatibus suscipit fugit quo, hic veniam iure dicta. Voluptate possimus nostrum vero iusto facere sed officia ipsa facilis?</p>
+                        </article>
+                    </div>
+                    <div class="box">
+                        <article>
+                            <p>Segurança do Trabalho <br><br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum nam aspernatur possimus necessitatibus suscipit fugit quo, hic veniam iure dicta. Voluptate possimus nostrum vero iusto facere sed officia ipsa facilis?</p>
+                        </article>
+                    </div>
+                    <div class="box">
+                        <article>
+                            <p>Meio Ambiente <br><br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum nam aspernatur possimus necessitatibus suscipit fugit quo, hic veniam iure dicta. Voluptate possimus nostrum vero iusto facere sed officia ipsa facilis?</p>
+                        </article>
+                    </div>
+                    </div>
+                      
+                  </div>
+                  <div class="carousel-item">
+                    <div class="collection">
+                    <div class="box">
+                        <article>
+                            <p>Higiene Ocupacional <br><br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum nam aspernatur possimus necessitatibus suscipit fugit quo, hic veniam iure dicta. Voluptate possimus nostrum vero iusto facere sed officia ipsa facilis?</p>
+                        </article>
+                    </div>
+                    <div class="box">
+                        <article>
+                            <p>Programa de Gerenciamento de Riscos <br><br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum nam aspernatur possimus necessitatibus suscipit fugit quo, hic veniam iure dicta. Voluptate possimus nostrum vero iusto facere sed officia ipsa facilis?</p>
+                        </article>
+                    </div>
+                    <div class="box">
+                        <article>
+                            <p>Consultoria Especializada <br><br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum nam aspernatur possimus necessitatibus suscipit fugit quo, hic veniam iure dicta. Voluptate possimus nostrum vero iusto facere sed officia ipsa facilis?</p>
+                        </article>
+                    </div>
+                    </div>
+                  </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Anterior</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Próximo</span>
+                </a>
+              </div>
+            
+            <!-- <div class="collection">
                 <div class="box">
                     <article>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum nam aspernatur possimus necessitatibus suscipit fugit quo, hic veniam iure dicta. Voluptate possimus nostrum vero iusto facere sed officia ipsa facilis?</p>
+                        <p>Engenharia <br><br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum nam aspernatur possimus necessitatibus suscipit fugit quo, hic veniam iure dicta. Voluptate possimus nostrum vero iusto facere sed officia ipsa facilis?</p>
                     </article>
                 </div>
                 <div class="box">
                     <article>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum nam aspernatur possimus necessitatibus suscipit fugit quo, hic veniam iure dicta. Voluptate possimus nostrum vero iusto facere sed officia ipsa facilis?</p>
+                        <p>Segurança do Trabalho <br><br> Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum nam aspernatur possimus necessitatibus suscipit fugit quo, hic veniam iure dicta. Voluptate possimus nostrum vero iusto facere sed officia ipsa facilis?</p>
                     </article>
                 </div>
                 <div class="box">
                     <article>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum nam aspernatur possimus necessitatibus suscipit fugit quo, hic veniam iure dicta. Voluptate possimus nostrum vero iusto facere sed officia ipsa facilis?</p>
+                        <p>Meio Ambiente <br><br> Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum nam aspernatur possimus necessitatibus suscipit fugit quo, hic veniam iure dicta. Voluptate possimus nostrum vero iusto facere sed officia ipsa facilis?</p>
                     </article>
                 </div>
-            </div>
+            </div> -->
         </section>
         <section id="portifolio">
             <h1>Portifólio</h1>

@@ -26,8 +26,9 @@ header {
 }
 
 nav {
+    padding-top: 15px;
     padding-right: 50px;
-    border: 1px solid black;
+    border: 0px solid black;
     height: 60px;
     display:flex;
     justify-content: flex-end;
@@ -49,33 +50,51 @@ section {
 }
 
 section * {
-    border: 1px solid black;
+    /* border: 1px solid black; */
 }
 
 #sobre {
-    padding-left: 100px;
-    padding-top: 60px;
-    border: 1px solid red;
+    padding-left: 60px;
+    padding-top: 90px;
+    /* border: 1px solid red; */
     background-color: rgba(255, 0, 0, 0.1);
-    height: 85vh;
+    height: 95vh;
     display: flex;
     align-items: center;
-    text-align: justify;
+    text-align: left;
+    background-image: url(../img/background-1.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    
+}
+#sobre article h1 {
+    font-size: x-large;
 }
 
-#sobre article p {
-    width: 50%;
+#sobre article * {
+    width: 40%;
+    color: white;
+}
+
+#sobre p {
+    font-size: 20px;
+}
+
+#sobre span {
+    background-color: black;
 }
 
 #solucoes {
+    /* border: 1px solid red; */
     /* padding-left: 100px; */
     padding-top: 60px;
-    border: 1px solid green;
-    background-color:  rgba(0, 255, 0, 0.1);;
-    height: 85vh;
+    /* border: 0px solid green; */
+    /* background-color:  rgba(0, 255, 0, 0.1);; */
+    height: 95vh;
     /* display: flex;
     align-items: center;
     text-align: justify; */
+    
 }
 
 #solucoes h1 {
@@ -89,7 +108,24 @@ section * {
 #solucoes .collection {
     display: flex;
     align-items: center;
+    justify-content: center;
     text-align: justify;
+    /* border: 1px solid yellow; */
+    /* width: 50%; */
+    background-color: rgb(29,27,41);
+}
+
+
+.box {
+    margin: 10px;
+    padding: 1em;
+    border: 0px solid white;
+    /* border-radius: 20px; */
+    height: 25rem;
+    background-color: rgb(203,203,203);
+    color: rgb(29,27,41);
+    width: 26vw;
+    border-radius: 15px;
 
 }
 
@@ -97,25 +133,17 @@ section * {
 #portifolio {
     padding: 20px;
     padding-top: 60px;
-    border: 1px solid yellow;
+    border: 0px solid yellow;
     background-color: rgba(238, 234, 24, 0.1);
-    height: 85vh;
+    height: 95vh;
 }
 
 #contato {
     padding: 20px;
     padding-top: 60px;
-    border: 1px solid purple;
+    border: 0px solid purple;
     background-color: rgba(248, 6, 248, 0.1);
-    height: 85vh;
+    height: 95vh;
 }
 
-.box {
-    margin: 10px;
-    padding: 1em;
-    border: 1px solid white;
-    /* border-radius: 20px; */
-    height: 25rem;
-    background-color: white;
 
-}
