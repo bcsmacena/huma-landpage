@@ -27,3 +27,9 @@ $('.carousel-control-prev').on('click', function () {
 } else {
     $(multipleItemCarousel).addClass('carousel slide');
 }
+
+// Burg collapse
+
+$(document).on('click', function() {
+    return $('.collapse').collapse('hide');
+});
