@@ -88,11 +88,12 @@ img{
     border-radius: 50%;
     top: 50%;
     transform: translateY(-50%);
-    opacity: .5;
+    opacity: .9;
 }
 
 .carousel-control-prev:hover, 
 .carousel-control-next:hover{
     opacity: .8;
+    background-color: #c4dcff;
 }
 
