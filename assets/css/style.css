@@ -27,20 +27,19 @@
     }
 }
 
+
 /*******************************************/
 /* SOLUCOES */
 /*******************************************/
-/* #carouselExample h1{
-    text-align: right;
-    font-size: 25px;
-    font-style: italic;
-    font-weight: 100;
-    margin-left: 25%;
+/* #solucoes{
+    background-color: red;
 } */
+
 .nossaMissao {
-    padding-left: 25%;
-    padding-right: 25px;
+    /* padding-left: 25%; */
+    padding-right: 50px;
     text-align: right;
+    /* background-color: yellow; */
 }
 
 .nossaMissao span{
@@ -48,85 +47,149 @@
     font-style: italic;
 }
 
-@media all and (min-width: 700px) {
+@media all and (min-width: 250px) {
+    .nossaMissao {
+        padding-left: 1%;
+    }
     .nossaMissao span {
-        font-size: calc(1rem + .9vw);        
+        font-size: calc(.8rem + .3vw);        
+    }
+    .card-title{
+        font-size: 14px;
+    }
+    .card-text{
+        font-size: 12px;
     }
 }
 
 @media all and (min-width: 350px) {
-    .nossaMissao span {
-        font-size: calc(0.9rem + .7vw);        
+    .nossaMissao {
+        padding-left: 10%;
     }
-}
-
-@media all and (min-width: 250px) {
     .nossaMissao span {
         font-size: calc(.8rem + .5vw);        
     }
+    .card-title{
+        font-size: 15px;
+    }
+    .card-text{
+        font-size: 13px;
+    }
 }
 
-#carouselExample {
-    padding-top: 110px;
+@media all and (min-width: 576px) {
+    .nossaMissao {
+        padding-left: 15%;
+    }
+    .nossaMissao span {
+        font-size: calc(.8rem + .7vw);        
+    }
+    .card-title{
+        font-size: 16px;
+    }
+    .card-text{
+        font-size: 14px;
+    }
+}
+
+@media all and (min-width: 700px) {
+    .nossaMissao {
+        padding-left: 20%;
+    }
+    .nossaMissao span {
+        font-size: calc(.9rem + .5vw);        
+    }
+    .card-title{
+        font-size: 17px;
+    }
+    .card-text{
+        font-size: 15px;
+    }
+}
+
+#carouselExampleControls {
+    padding-top: 70px;
     padding-left: 15px;
     padding-right: 15px;
     top: 50%;
     -ms-transform: translateY(-50%);
     transform: translateY(-50%);
+    /* background-color: green; */
 }
 
-.img-wrapper{
-    max-width: 100%;
-    margin-bottom: -50px;
-    height: 65vw;
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
+#carouselExampleControlsSmallScreen {
+    padding-top: 70px;
+    padding-left: 15px;
+    padding-right: 15px;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    /* background-color: green; */
 }
 
-img{
-    max-width: 100%;
-    max-height: 100%;
-}
-
-@media screen and (min-width: 576px) {
-    .carousel-inner {
-        display: flex;
-    }
-    .carousel-item {
-        display: block;
-        margin-right: 0;
-        flex: 0 0 calc(100%/3);
-    }
-    .img-wrapper{
-        height: 23vw;
-    }    
-}
-
-.carousel-inner {
-    padding: 1em;
-}
-
-.card {
-    margin: 0 .5em;
+.card{
+    border: none;
     border-radius: 0;
-    box-shadow: 2px 6px 8px 0 rgba(22, 22, 26, .18);
+    box-shadow: 2px 6px 8px 0 rgba(22, 22, 26, 0.18);    
+}
+
+.carousel-inner{
+    padding: 2em;
+    padding-top: 1em;
 }
 
 .carousel-control-prev, 
 .carousel-control-next{
-    width: 6vh;
-    height: 6vh;
     background-color: #e1e1e1;
+    width: 5vh;
+    height: 5vh;
     border-radius: 50%;
-    top: 50%;
+    top: 60%;
     transform: translateY(-50%);
     opacity: .9;
+    margin: 12px;
+}
+
+.carousel-control-prev span, 
+.carousel-control-next span{
+    width: 1.5rem;
+    height: 1.5rem;
 }
 
 .carousel-control-prev:hover, 
 .carousel-control-next:hover{
-    opacity: .8;
-    background-color: #c4dcff;
+    opacity: .9;
+    background-color: #9dc3fb;
 }
 
+
+@media screen and (min-width: 576px) {
+    .cards-wrapper{
+        display: flex;
+    }
+    
+    .card {
+        margin: 0 .5em;
+        width: calc(100%/3);
+    }
+    
+    .image-wrapper {
+        height: 22vw;
+        margin: 0 auto;
+        margin-bottom: -30px;
+        /* display: flex;
+        align-items: center;
+        justify-content: center; */
+    }
+}
+    
+@media screen and (max-width: 577px) {
+    .card:not(:first-child) {
+        display: none;
+    }
+}
+
+.image-wrapper img {
+    max-width: 100%;
+    max-height: 100%;
+}
