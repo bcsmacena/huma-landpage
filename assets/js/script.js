@@ -5,7 +5,7 @@ $(document).on('click', function() {
     return $('.collapse').collapse('hide');
 });
 
-// Menu selection
+// Menu selection && show selected section name
 
 $(document).ready(function() {
     $("ul.navbar-nav > li > a").click(function(e) {
@@ -21,9 +21,10 @@ $(document).ready(function() {
     });
   });
 
+// Hide section name when Home
+
   $(document).ready(function(){
     $('.navbar-brand').click(function(){
-      // document.getElementById("navbarText").innerHTML = "";
       $('#navbarText').hide();
     });
   });
