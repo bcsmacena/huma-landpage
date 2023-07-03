@@ -183,13 +183,17 @@
     }
 
     section#contato > div:first-of-type {
-        height: 90%!important;
+         height: 70%!important; 
     }
 }
     
 @media screen and (max-width: 577px) {
     .card:not(:first-child) {
         display: none;
+    }
+
+    form {
+        width: 80%!important;
     }
 }
 
@@ -201,10 +205,12 @@
 
 section#contato {
     height: 100vh;
-    background-color: black;
+    background-color: rgb(29,27,41);
     display: flex;
     flex-wrap: wrap;
 }
+
+
 
 .info {
     /* border: yellow 2px solid; */
@@ -216,7 +222,7 @@ section#contato {
 }
 
 .info ul {
-    border: black 1px solid;
+   
     width: 100vw;
     display: flex;
     /* align-items: center; */
@@ -238,3 +244,4 @@ section#contato {
 
 
 }
+

@@ -356,14 +356,32 @@
     <!-- ************************************ -->
     <!-- CONTATO -->
     <!-- ************************************ -->
-    <section id="contato" class="pb-5 container-fluid">
-        <div class="d-flex container-fluid  p-0 navbar-toggler" style="height: 70% ;justify-content: center; align-items: flex-end; " >
-            <a class="nav-link p-0" href="#">
-                <img src="assets/img/coruja.png" style="width: 5rem;">
-            </a>
+    <section id="contato" class="p-0 container-fluid">
+        
+        <div class="d-flex container-fluid info p-0 pt-5 align-items-center " style="border: 0px solid white;">
+        
+            <form action="https://formsubmit.co/330251a6f5d7581a37cc05c2f46606e9" method="POST" class="mt-5 pt-5" style="width: 30%;border: 0px solid white;">
+                <legend style="color: white;">Fale conosco!</legend>
+                <input type="text" class="form-control mb-3" id="floatingInput" placeholder="Nome" name="name" required>
+                <!-- <label for="floatingInput">Email address</label> -->
+                <input type="email" class="form-control mb-3" id="floatingInput" placeholder="Email" name="email" required>
+                <!-- <label for="floatingInput">Email address</label> -->
+                <textarea class="form-control mb-3" placeholder="Deixe sua mensagem" name="message" id="floatingTextarea2" style="height: 100px; resize: none;"></textarea>
+                <!-- <label for="floatingTextarea2">Comments</label> -->
+                <input type="hidden" name="_next" value="http://localhost:5500">
+                <input type="hidden" name="_template" value="table">
+                <div class="d-grid gap-2">
+                    <button type="submit" class="btn btn-primary">Enviar</button>
+                  </div>
+           </form>
         </div>
         
-        <div class="d-flex container-fluid info p-0 ">
+        <div class="d-flex justify-content-center align-items-end container-fluid navbar-toggler" style="height: 15%; align-items: center; border: 0px solid red;" >
+            <a class="nav-link p-0" href="#">
+                <img src="assets/img/coruja-dark-blue.png" style="width: 2.5rem;">
+            </a>
+        </div>
+        <div class="d-flex container-fluid info p-0 align-items-center" style="border:0px solid red">
                  
                 <ul class="p-0 m-0">
                     <li>
@@ -399,7 +417,7 @@
                         </a>
                     </li>
                     <li>
-                        <a href="mailto:contato@humaengenharia.com">
+                        <a href="mailto:contato@humaengenharia.com?subject=Site%20-%20Fale%20Conosco&body=Quero%20receber%20mais%20informações!%0A%0ANome:%0ATelefone:">
                             <!--img id="svg-mail" src="images/mail-svgrepo-com-2.svg" height="50px"/-->
                             <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-envelope-at" viewBox="0 0 16 16">
                                 <path d="M2 2a2 2 0 0 0-2 2v8.01A2 2 0 0 0 2 14h5.5a.5.5 0 0 0 0-1H2a1 1 0 0 1-.966-.741l5.64-3.471L8 9.583l7-4.2V8.5a.5.5 0 0 0 1 0V4a2 2 0 0 0-2-2H2Zm3.708 6.208L1 11.105V5.383l4.708 2.825ZM1 4.217V4a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v.217l-7 4.2-7-4.2Z"/>
@@ -410,12 +428,13 @@
                 </ul>
                 
         </div>
-        <div class="d-flex container-fluid p-0 m-0" style=" justify-content: center; align-items: flex-end; color: white; text-align: center;">
+        <div class="d-flex container-fluid p-0 m-0" style=" justify-content: center; align-items: center; color: white; text-align: center; border: 0px solid white">
             Huma Engenharia e Consultoria Ltda
         </div>
-        <div class="d-flex container-fluid p-0 m-0 pb-5 " style=" justify-content: center; align-items: flex-end; color: white; text-align: center;">
+        <div class="d-flex container-fluid p-0 mb-5 pb-5 " style=" justify-content: center; align-items: center; color: white; text-align: center; border: 0px solid red"">
             CNPJ 45.880.649/0001-82
         </div>
+        
     </section>
     
     </div>
