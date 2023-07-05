@@ -1,4 +1,11 @@
 /*******************************************/
+/* HEADER */
+/*******************************************/
+.teste {
+    display: none;
+}  
+
+/*******************************************/
 /* HOME */
 /*******************************************/
 .txtQuemSomos {
@@ -11,19 +18,37 @@
 
 @media all and (max-width: 700px) {
     .txtQuemSomos p {
-        font-size: calc(1.125rem + 1.4vw);        
+        font-size: calc(1.125rem + 1.2vw);        
+    }
+    .navbar-toggler {
+        margin-top: -10px;
+    }
+    .teste {
+        display: block;
+        font-size: 11px;
+        font-style: italic;
+        color: darkgray;
+        padding-top: 12px;
+        position: absolute;
+        right: 22px;
+    }    
+}
+
+@media all and (max-width: 575px) {
+    .txtQuemSomos p {
+        font-size: calc(1.125rem + 1vw);        
     }
 }
 
 @media all and (max-width: 350px) {
     .txtQuemSomos p {
-        font-size: calc(1.125rem + 1.2vw);        
+        font-size: calc(1.125rem + 0.8vw);        
     }
 }
 
 @media all and (max-width: 250px) {
     .txtQuemSomos p {
-        font-size: calc(1.125rem + 1vw);        
+        font-size: calc(1rem + 0.6vw);        
     }
 }
 
