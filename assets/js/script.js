@@ -13,3 +13,10 @@ $(document).ready(function() {
       $(this).addClass("active");
     });
   });
+
+function recaptchaCallback() {
+    var btnSubmit = document.getElementById("btnSubmit");
+    if (btnSubmit.hasAttribute("disabled")) {
+        btnSubmit.removeAttribute("disabled");
+    }
+}
