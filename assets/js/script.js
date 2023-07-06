@@ -21,6 +21,12 @@ $(document).ready(function() {
     });
   });
 
+function recaptchaCallback() {
+    var btnSubmit = document.getElementById("btnSubmit");
+    if (btnSubmit.hasAttribute("disabled")) {
+        btnSubmit.removeAttribute("disabled");
+    }
+}
 // Hide section name when Home
 
   $(document).ready(function(){

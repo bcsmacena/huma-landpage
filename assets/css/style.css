@@ -206,15 +206,73 @@
         align-items: center;
         justify-content: center; */
     }
+
+    section#contato > div:first-of-type {
+         height: 70%!important; 
+    }
 }
     
 @media screen and (max-width: 577px) {
     .card:not(:first-child) {
         display: none;
     }
+
+    form {
+        width: 80%!important;
+    }
 }
 
 .image-wrapper img {
     max-width: 100%;
     max-height: 100%;
+}
+
+
+
+
+/*******************************************/
+/* CONTATO */
+/*******************************************/
+
+section#contato {
+    height: 100vh;
+    background-color: rgb(29,27,41);
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+
+.info {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.info ul {
+   
+    width: 100vw;
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+    
+}
+
+.info ul li {
+    padding: 12px;
+    text-align: center;
+    color: rgb(254,254,253);
+    list-style-type: none;
+}
+
+.info svg {
+    fill: rgba(255, 255, 255, 0.8);
+    width: 30px;
+    height: 30px;
+
+
+}
+
+.modal {
+    --bs-modal-width: 70%!important;
 }
