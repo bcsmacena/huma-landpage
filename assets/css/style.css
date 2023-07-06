@@ -228,6 +228,12 @@
 }
 
 
+
+
+/*******************************************/
+/* CONTATO */
+/*******************************************/
+
 section#contato {
     height: 100vh;
     background-color: rgb(29,27,41);
@@ -238,12 +244,9 @@ section#contato {
 
 
 .info {
-    /* border: yellow 2px solid; */
     display: flex;
-    /**flex-direction: row;**/
     justify-content: center;
     align-items: flex-end;
-   /* padding: 40px; */
 }
 
 .info ul {
@@ -270,3 +273,6 @@ section#contato {
 
 }
 
+.modal {
+    --bs-modal-width: 70%!important;
+}
