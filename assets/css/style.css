@@ -210,21 +210,75 @@
     section#contato > div:first-of-type {
          height: 70%!important; 
     }
+    
+    
+
+    #section-clientes {
+        height: 100dvh;
+    }
+
+    #section-clientes > div > p {
+        padding-top: 80px!important;
+        padding-left: 280px!important;
+    }
+
+    #card-clientes-container {
+        height: 60%!important;
+        width: 60%!important;
+        margin-top: 0px;
+        
+    }
+    #card-clientes-container .card:first-child {
+        align-self: flex-start!important;
+    }
+    #card-clientes-container .card:last-child {
+        align-self: flex-end!important;
+    }
+
+    #card-cliente-only-mobile {
+        display: none!important;
+    }
+    #card-cliente-only-mobile {
+        display: flex!important;
+    }
 }
     
 @media screen and (max-width: 577px) {
-    .card:not(:first-child) {
+    .card-solucoes:not(:first-child) {
         display: none;
     }
 
     form {
         width: 80%!important;
     }
+
+
 }
 
 .image-wrapper img {
     max-width: 100%;
     max-height: 100%;
+}
+
+
+/********************************************/
+/* CLIENTES * /
+********************************************/
+#clientes {
+    position: relative;
+}
+
+#section-clientes::before {    
+      content: "";
+      background-image: url(../img/unsplash/alina-grubnyak-ZiQkhI7417A-unsplash.jpg);
+      
+      background-size: cover;
+      position: absolute;
+      top: 0px;
+      right: 0px;
+      bottom: 0px;
+      left: 0px;
+      opacity: 0.1;
 }
 
 
