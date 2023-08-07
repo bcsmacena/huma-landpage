@@ -16,6 +16,21 @@
     transform: translateY(-50%);
   }
 
+@media screen and (max-height: 280px) {
+    #all-content > * {
+        display: none!important;
+    }
+    #all-content {
+        background-image: url(../img/coruja-dark-blue.png);
+        background-repeat: round;
+        background-position-x: 50%;
+        background-size: 5%;
+        background-color:rgb(29,27,41);
+        height: 100vh;
+    }
+}
+
+
 @media all and (max-width: 700px) {
     .txtQuemSomos p {
         font-size: calc(1.125rem + 1.2vw);        
@@ -238,9 +253,11 @@
     #card-cliente-only-mobile {
         display: none!important;
     }
-    #card-cliente-only-mobile {
+    
+    #card-cliente-only-desktop {
         display: flex!important;
     }
+    
 }
     
 @media screen and (max-width: 577px) {
@@ -250,6 +267,14 @@
 
     form {
         width: 80%!important;
+    }
+
+    #card-cliente-only-desktop {
+        display: none!important;
+    }
+    
+    #card-cliente-only-mobile {
+        display: flex!important;
     }
 
 
