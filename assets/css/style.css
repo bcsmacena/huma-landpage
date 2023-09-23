@@ -16,16 +16,16 @@
     transform: translateY(-50%);
   }
 
-@media screen and (max-height: 280px) {
+@media screen and (max-height: 480px) {
     #all-content > * {
         display: none!important;
     }
     #all-content {
-        background-image: url(../img/coruja-dark-blue.png);
-        background-repeat: round;
+        background-image: url(../img/portrait-huma.gif);
+        background-repeat: no-repeat;
         background-position-x: 50%;
-        background-size: 5%;
-        background-color:rgb(29,27,41);
+        background-size: 40%;
+        /* background-color:rgb(29,27,41); */
         height: 100vh;
     }
 }
