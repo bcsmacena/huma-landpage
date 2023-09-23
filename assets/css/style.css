@@ -16,7 +16,7 @@
     transform: translateY(-50%);
   }
 
-@media screen and (max-height: 480px) {
+@media screen and (max-height: 10px) {
     #all-content > * {
         display: none!important;
     }
