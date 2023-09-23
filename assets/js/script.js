@@ -1,4 +1,3 @@
-
 // Burg collapse
 
 $(document).on('click', function() {
