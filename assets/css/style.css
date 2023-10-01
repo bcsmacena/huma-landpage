@@ -157,15 +157,7 @@
     /* background-color: green; */
 }
 
-#carouselExampleControlsSmallScreen {
-    padding-top: 70px;
-    padding-left: 15px;
-    padding-right: 15px;
-    top: 50%;
-    -ms-transform: translateY(-50%);
-    transform: translateY(-50%);
-    /* background-color: green; */
-}
+
 
 .card{
     border: none;
@@ -174,7 +166,7 @@
 }
 
 .carousel-inner{
-    padding: 2em;
+    padding: 0px;
     padding-top: 1em;
 }
 
@@ -209,7 +201,7 @@
     }
     
     .card {
-        margin: 0 .5em;
+        margin: 1em;
         width: calc(100%/3);
     }
     
@@ -278,6 +270,23 @@
     }
 
 
+    #carouselExampleControlsSmallScreen {
+        padding-top: 70px;
+        padding-left: 0px;
+        padding-right: 0px;
+        top: 50%;
+        -ms-transform: translateY(-50%);
+        transform: translateY(-50%);
+        /* background-color: green; */
+    }
+
+    #solucoes-container {
+        padding: 0px;
+    }
+
+    .card {
+        box-shadow: none;
+    }
 }
 
 .image-wrapper img {
