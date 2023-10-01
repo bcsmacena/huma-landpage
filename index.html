@@ -18,7 +18,7 @@
     <title>HUMA - Engenharia e Consultoria</title>
 </head>
 
-<body>
+<body onscroll="activeSection()">
 
     <div id="all-content">
     
@@ -35,7 +35,7 @@
                     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                     <div class="teste">
-                        <p id="navbarText"></p>
+                        <p id="activeSection"></p>
                     </div>
                 </button>
                 <div class="collapse navbar-collapse flex-row-reverse pe-5" id="navbarNav">
@@ -58,8 +58,8 @@
         </nav>
     </header>
 
-
-    <div data-bs-spy="scroll" data-bs-target="#navbarNav" data-bs-offset="0" class="scrollspy-example" tabindex="0">
+    <!-- BEGIN: Scroll spy -->
+    <div id="scrollSpy" data-bs-spy="scroll" data-bs-target="#navbarNav" data-bs-offset="0" class="scrollspy-example" tabindex="0">
 
     <!-- ************************************ -->
     <!-- HOME -->
@@ -741,6 +741,7 @@
     </section>
     
     </div>
+    <!-- END: Scroll spy -->
 
     </div>
     <script src="https://code.jquery.com/jquery-3.6.3.min.js"
