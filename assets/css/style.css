@@ -145,6 +145,11 @@
     .card-text{
         font-size: 15px;
     }
+
+    #logos {
+        width: 65vw!important;
+        align-self: center!important;
+    }
 }
 
 #carouselExampleControls {
@@ -207,7 +212,7 @@
 
     .card-logos {
         width: 80%;
-        box-shadow: 0px 0px!important;
+        box-shadow: 0px 1px!important;
     }
     
     .image-wrapper {
@@ -227,12 +232,12 @@
 
     #section-clientes {
         height: 100dvh;
-        width: 65dvw;
+        width: 75dvw;
     }
 
     #section-clientes > div > p {
-        padding-top: 80px!important;
-        padding-left: 280px!important;
+        /*padding-top: 80px!important;*/
+        /*padding-left: 280px!important;*/
     }
 
     #card-clientes-container {
