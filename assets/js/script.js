@@ -4,21 +4,18 @@ $(document).on('click', function() {
     return $('.collapse').collapse('hide');
 });
 
-// Menu selection && show selected section name
-
-$(document).ready(function() {
-    $("ul.navbar-nav > li > a").click(function(e) {
-      $("ul.navbar-nav > li > a").removeClass("active");
-      $(this).addClass("active");
-      var menuItem = $(this).text();  
-      if (menuItem == "Home") {
-        $('#navbarText').hide();
-      } else {       
-        $('#navbarText').show();
-        document.getElementById("navbarText").innerHTML = menuItem;
-      }
-    });
-  });
+function activeSection() {
+    var scrollSpyContentEl = document.getElementById('scrollSpy');
+    var scrollSpy = bootstrap.ScrollSpy.getInstance(scrollSpyContentEl);
+    if( scrollSpy._activeTarget !== null ) { var activeTarget = scrollSpy._activeTarget.innerText }
+    var menuItem = document.getElementById('activeSection');
+    if( activeTarget == "Home" ){
+      menuItem.innerText = "" 
+    }
+    else if( activeTarget !== undefined ) {
+      menuItem.innerText = activeTarget;
+    }
+}
 
 function recaptchaCallback() {
     var btnSubmit = document.getElementById("btnSubmit");

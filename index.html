@@ -18,7 +18,7 @@
     <title>HUMA - Engenharia e Consultoria</title>
 </head>
 
-<body>
+<body onscroll="activeSection()">
 
     <div id="all-content">
     
@@ -35,7 +35,7 @@
                     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                     <div class="teste">
-                        <p id="navbarText"></p>
+                        <p id="activeSection"></p>
                     </div>
                 </button>
                 <div class="collapse navbar-collapse flex-row-reverse pe-5" id="navbarNav">
@@ -47,7 +47,7 @@
                             <a class="nav-link" href="#solucoes">Soluções</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#clientes">Clientes</a>
+                            <a class="nav-link" href="#clientes">Projetos</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#contato">Contato</a>
@@ -58,8 +58,8 @@
         </nav>
     </header>
 
-
-    <div data-bs-spy="scroll" data-bs-target="#navbarNav" data-bs-offset="0" class="scrollspy-example" tabindex="0">
+    <!-- BEGIN: Scroll spy -->
+    <div id="scrollSpy" data-bs-spy="scroll" data-bs-target="#navbarNav" data-bs-offset="0" class="scrollspy-example" tabindex="0">
 
     <!-- ************************************ -->
     <!-- HOME -->
@@ -82,7 +82,7 @@
     <!-- SOLUCOES -->
     <!-- ************************************ -->
     <section id="solucoes">
-        <div class="vh-100 container-fluid">
+        <div id="solucoes-container" class="vh-100 container-fluid">
             <div id="carouselExampleControls" class="carousel slide d-none d-sm-block" data-interval="false">
                 <div class="nossaMissao container-fluid">
                     <span>"Nossa missão é proporcionar às empresas e às pessoas um ambiente seguro, agradável e com
@@ -94,7 +94,7 @@
                         <div class="cards-wrapper">
                             <div class="card card-solucoes">
                                 <div class="image-wrapper">
-                                    <img src="assets\img\card_img-1.jpg" alt="...">
+                                    <img src="assets/img/solucoes/PGR.jpg" alt="...">
                                 </div>
                                 <div class="card-body">
                                     <h5 class="card-title">PGR</h5>
@@ -107,7 +107,7 @@
                             </div>
                             <div class="card card-solucoes">
                                 <div class="image-wrapper">
-                                    <img src="assets\img\card_img-2.jpg" alt="...">
+                                    <img src="assets/img/solucoes/LTCAT.jpg" alt="...">
                                 </div>
                                 <div class="card-body">
                                     <h5 class="card-title">LTCAT</h5>
@@ -120,14 +120,14 @@
                             </div>
                             <div class="card card-solucoes">
                                 <div class="image-wrapper">
-                                    <img src="assets\img\card_img-3.jpg" alt="...">
+                                    <img src="assets/img/solucoes/ergonomia.jpg" alt="...">
                                 </div>
                                 <div class="card-body">
                                     <h5 class="card-title">Ergonomia</h5>
                                     <ul>
-                                        <li class="card-text">Atendimento à Norma Regulamentadora NR-1;</li>
-                                        <li class="card-text">Elaboração de Inventário de Riscos e Plano de Ação;</li>
-                                        <li class="card-text">Indicação de Avaliações e Medidas de Controle adequadas para cada atividade.</li>
+                                        <li class="card-text">Atendimento à NR-17 e Inventário de Riscos da NR-1;</li>
+                                        <li class="card-text">Proporcionam melhorias no ambiente de trabalho;</li>
+                                        <li class="card-text">Prevenção de Doenças e Promoção de bem-estar aos trabalhadores.</li>
                                     </ul>
                                 </div>
                             </div>
@@ -137,12 +137,12 @@
                         <div class="cards-wrapper">
                             <div class="card card-solucoes">
                                 <div class="image-wrapper">
-                                    <img src="assets\img\card_img-4.jpg" alt="...">
+                                    <img src="assets/img/solucoes/corpo-de-bombeiros.jpg" alt="...">
                                 </div>
                                 <div class="card-body">
                                     <h5 class="card-title">Corpo de Bombeiros</h5>
                                     <ul>
-                                        <li class="card-text">Realização de AVCB e CLCB;</li>
+                                        <li class="card-text">Realização de AVCB (Auto de Vistoria do Corpo de Bombeiros) e CLCB (Certificado de Licença do Corpo de Bombeiros);</li>
                                         <li class="card-text">Atendimento as Instruções Técnicas do Corpo de Bombeiros;</li>
                                         <li class="card-text">Projetos de prevenção e combate a incêndio.</li>
                                     </ul>
@@ -150,7 +150,7 @@
                             </div>
                             <div class="card card-solucoes">
                                 <div class="image-wrapper">
-                                    <img src="assets\img\card_img-5.jpg" alt="...">
+                                    <img src="assets/img/solucoes/laudos-tecnicos.jpg" alt="...">
                                 </div>
                                 <div class="card-body">
                                     <h5 class="card-title">Laudos Técnicos</h5>
@@ -163,7 +163,7 @@
                             </div>
                             <div class="card card-solucoes">
                                 <div class="image-wrapper">
-                                    <img src="assets\img\card_img-6.jpg" alt="...">
+                                    <img src="assets/img/solucoes/licenciamento-ambiental.jpg" alt="...">
                                 </div>
                                 <div class="card-body">
                                     <h5 class="card-title">Licenciamento Ambiental</h5>
@@ -178,22 +178,10 @@
                     </div>
                     <div class="carousel-item">
                         <div class="cards-wrapper">
+
                             <div class="card card-solucoes">
                                 <div class="image-wrapper">
-                                    <img src="assets\img\card_img-7.jpg" alt="...">
-                                </div>
-                                <div class="card-body">
-                                    <h5 class="card-title">Regularizações</h5>
-                                    <ul>
-                                        <li class="card-text">Secretarias Ambientais (Manifestos, Certidões, Informes Técnicos);</li>
-                                        <li class="card-text">Secretarias de Obras e Infraestrutura (Uso e Ocupação do Solo, Zoneamento);</li>
-                                        <li class="card-text">CAR – Cadastro Ambiental Rural.</li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="card card-solucoes">
-                                <div class="image-wrapper">
-                                    <img src="assets\img\card_img-8.jpg" alt="...">
+                                    <img src="assets/img/solucoes/estudos-ambientais.jpg" alt="...">
                                 </div>
                                 <div class="card-body">
                                     <h5 class="card-title">Estudos Ambientais</h5>
@@ -206,7 +194,20 @@
                             </div>
                             <div class="card card-solucoes">
                                 <div class="image-wrapper">
-                                    <img src="assets\img\card_img-9.jpg" alt="...">
+                                    <img src="assets/img/solucoes/regularizacoes.jpg" alt="...">
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-title">Regularizações</h5>
+                                    <ul>
+                                        <li class="card-text">Secretarias Ambientais (Manifestos, Certidões, Informes Técnicos);</li>
+                                        <li class="card-text">Secretarias de Obras e Infraestrutura (Uso e Ocupação do Solo, Zoneamento);</li>
+                                        <li class="card-text">CAR – Cadastro Ambiental Rural.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="card card-solucoes">
+                                <div class="image-wrapper">
+                                    <img src="assets/img/solucoes/avaliacoes-ambientais.jpg" alt="...">
                                 </div>
                                 <div class="card-body">
                                     <h5 class="card-title">Avaliações ambientais</h5>
@@ -246,36 +247,10 @@
                         <div class="cards-wrapper">
                             <div class="card card-solucoes">
                                 <div class="image-wrapper">
-                                    <img src="assets\img\card_img-1.jpg" alt="...">
+                                    <img src="assets/img/solucoes/PGR.jpg" alt="...">
                                 </div>
                                 <div class="card-body">
                                     <h5 class="card-title">PGR</h5>
-                                    <ul>
-                                        <li class="card-text">Atendimento à Norma Regulamentadora NR-1;</li>
-                                        <li class="card-text">Elaboração de Inventário de Riscos e Plano de Ação;</li>
-                                        <li class="card-text">Indicação de Avaliações e Medidas de Controle adequadas para cada atividade.</li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="card card-solucoes">
-                                <div class="image-wrapper">
-                                    <img src="assets\img\card_img-2.jpg" alt="...">
-                                </div>
-                                <div class="card-body">
-                                    <h5 class="card-title">LTCAT</h5>
-                                    <ul>
-                                        <li class="card-text">Identificação de agentes nocivos prejudiciais aos seus trabalhadores;</li>
-                                        <li class="card-text">Conclusão quanto ao direito de aposentadoria especial;</li>
-                                        <li class="card-text">Atendimento às exigências do INSS e lançamento no eSocial.</li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="card card-solucoes">
-                                <div class="image-wrapper">
-                                    <img src="assets\img\card_img-3.jpg" alt="...">
-                                </div>
-                                <div class="card-body">
-                                    <h5 class="card-title">Ergonomia</h5>
                                     <ul>
                                         <li class="card-text">Atendimento à Norma Regulamentadora NR-1;</li>
                                         <li class="card-text">Elaboração de Inventário de Riscos e Plano de Ação;</li>
@@ -289,20 +264,58 @@
                         <div class="cards-wrapper">
                             <div class="card card-solucoes">
                                 <div class="image-wrapper">
-                                    <img src="assets\img\card_img-4.jpg" alt="...">
+                                    <img src="assets/img/solucoes/LTCAT.jpg" alt="...">
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-title">LTCAT</h5>
+                                    <ul>
+                                        <li class="card-text">Identificação de agentes nocivos prejudiciais aos seus trabalhadores;</li>
+                                        <li class="card-text">Conclusão quanto ao direito de aposentadoria especial;</li>
+                                        <li class="card-text">Atendimento às exigências do INSS e lançamento no eSocial.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="cards-wrapper">
+                            <div class="card card-solucoes">
+                                <div class="image-wrapper">
+                                    <img src="assets/img/solucoes/ergonomia.jpg" alt="...">
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-title">Ergonomia</h5>
+                                    <ul>
+                                        <li class="card-text">Atendimento à NR-17 e Inventário de Riscos da NR-1;</li>
+                                        <li class="card-text">Proporcionam melhorias no ambiente de trabalho;</li>
+                                        <li class="card-text">Prevenção de Doenças e Promoção de bem-estar aos trabalhadores.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="cards-wrapper">
+                            <div class="card card-solucoes">
+                                <div class="image-wrapper">
+                                    <img src="assets/img/solucoes/corpo-de-bombeiros.jpg" alt="...">
                                 </div>
                                 <div class="card-body">
                                     <h5 class="card-title">Corpo de Bombeiros</h5>
                                     <ul>
-                                        <li class="card-text">Realização de AVCB e CLCB;</li>
+                                        <li class="card-text">Realização de AVCB (Auto de Vistoria do Corpo de Bombeiros) e CLCB (Certificado de Licença do Corpo de Bombeiros);</li>
                                         <li class="card-text">Atendimento as Instruções Técnicas do Corpo de Bombeiros;</li>
                                         <li class="card-text">Projetos de prevenção e combate a incêndio.</li>
                                     </ul>
                                 </div>
                             </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="cards-wrapper">
                             <div class="card card-solucoes">
                                 <div class="image-wrapper">
-                                    <img src="assets\img\card_img-5.jpg" alt="...">
+                                    <img src="assets/img/solucoes/laudos-tecnicos.jpg" alt="...">
                                 </div>
                                 <div class="card-body">
                                     <h5 class="card-title">Laudos Técnicos</h5>
@@ -313,9 +326,13 @@
                                     </ul>
                                 </div>
                             </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="cards-wrapper">
                             <div class="card card-solucoes">
                                 <div class="image-wrapper">
-                                    <img src="assets\img\card_img-6.jpg" alt="...">
+                                    <img src="assets/img/solucoes/licenciamento-ambiental.jpg" alt="...">
                                 </div>
                                 <div class="card-body">
                                     <h5 class="card-title">Licenciamento Ambiental</h5>
@@ -328,21 +345,9 @@
                             </div>
                         </div>
                     </div>
+
                     <div class="carousel-item">
                         <div class="cards-wrapper">
-                            <div class="card card-solucoes">
-                                <div class="image-wrapper">
-                                    <img src="assets\img\card_img-7.jpg" alt="...">
-                                </div>
-                                <div class="card-body">
-                                    <h5 class="card-title">Regularizações</h5>
-                                    <ul>
-                                        <li class="card-text">Secretarias Ambientais (Manifestos, Certidões, Informes Técnicos);</li>
-                                        <li class="card-text">Secretarias de Obras e Infraestrutura (Uso e Ocupação do Solo, Zoneamento);</li>
-                                        <li class="card-text">CAR – Cadastro Ambiental Rural.</li>
-                                    </ul>
-                                </div>
-                            </div>
                             <div class="card card-solucoes">
                                 <div class="image-wrapper">
                                     <img src="assets\img\card_img-8.jpg" alt="...">
@@ -356,9 +361,30 @@
                                     </ul>
                                 </div>
                             </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="cards-wrapper">
                             <div class="card card-solucoes">
                                 <div class="image-wrapper">
-                                    <img src="assets\img\card_img-9.jpg" alt="...">
+                                    <img src="assets/img/solucoes/regularizacoes.jpg" alt="...">
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-title">Regularizações</h5>
+                                    <ul>
+                                        <li class="card-text">Secretarias Ambientais (Manifestos, Certidões, Informes Técnicos);</li>
+                                        <li class="card-text">Secretarias de Obras e Infraestrutura (Uso e Ocupação do Solo, Zoneamento);</li>
+                                        <li class="card-text">CAR – Cadastro Ambiental Rural.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="cards-wrapper">
+                            <div class="card card-solucoes">
+                                <div class="image-wrapper">
+                                    <img src="assets/img/solucoes/avaliacoes-ambientais.jpg" alt="...">
                                 </div>
                                 <div class="card-body">
                                     <h5 class="card-title">Avaliações ambientais</h5>
@@ -372,6 +398,7 @@
                         </div>
                     </div>
                 </div>
+
                 <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControlsSmallScreen"
                     data-bs-slide="prev">
                     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -391,49 +418,84 @@
     <!-- ************************************ -->
     <section id="clientes" style="background-color: white; ">
         <div style="height: 80px; "></div>
-        <div class="d-flex flex-column container-fluid" id="section-clientes">
+        
+            <div class="d-flex flex-column container-fluid" id="section-clientes">
+                <div class="d-flex mt-5 pt-2 ">
+                    <p class="vw-100 pt-5 pb-2 fs-1 text-dark">Conheça alguns de nossos projetos</p>
+                </div>
+                
+                <!--div class="d-flex flex-column flex-wrap align-self-center justify-content-evenly" id="card-clientes-container" style="width: 100%">
+                    <div class="card mb-3 align-self-center" style="max-width: 540px; width: 100%; ">
+                        <div class="row g-0">
+                        <div class="col-md-4 d-flex align-items-center">
+                            <img src="assets/img/unsplash/christian-buehner-DItYlc26zVI-unsplash.png" class="img-fluid rounded-start" alt="Foto de christian buehner na Unsplash">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                            <h5 class="card-title">John Doe - CEO Contoso </h5>
+                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                            <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+
+                    <div class="card mb-3 align-self-center" style="max-width: 540px; width: 100%; ">
+                        <div class="row g-0">
+                        <div class="col-md-4 d-flex align-items-center" id="card-cliente-only-mobile">
+                            <img src="assets/img/unsplash/erwi-vZurgrIe60w-unsplash.png" class="img-fluid rounded-start" alt="Foto de Erwi na Unsplash">
+                        </div>  
+                        <div class="col-md-8">
+                            <div class="card-body">
+                            <h5 class="card-title">Jane Doe - CFO Contoso </h5>
+                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                            <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+                            </div>
+                        </div>
+                        <div class="col-md-4 d-flex align-items-center" id="card-cliente-only-desktop">
+                            <img src="assets/img/unsplash/erwi-vZurgrIe60w-unsplash.png" class="img-fluid rounded-start" alt="Foto de Erwi na Unsplash">
+                        </div>    
+                        </div>
+                    </div>
+
+
+                </div-->
+                <div id="logos" class="row row-cols-1 row-cols-md-3 g-2 align-items-center">
+                    <div class="col">
+                        <div class="card card-logos">
+                            <div class="">
+                                <img src="http://www.ncco.com.br/wp-content/uploads/2016/04/logos2.gif" class="card-img-top" alt="...">
+                            </div>
+                            
+                            <div class="card-body">
+                                <!--h5 class="card-title">LTCAT</h5-->
+                                
+                                    <p class="card-text text-center">Obtenção de Licença de Operação</li>
+                                
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card card-logos">
+                            <div class="">
+                                <img src="assets/img/logos/kinross.png" class="card-img-top" alt="...">
+                            </div>
+                            
+                            <div class="card-body">
+                                <!--h5 class="card-title">LTCAT</h5-->
+                                
+                                    <p class="card-text text-center">PGR em atendimento a NR-22</li>
+                                
+                            </div>
+                        </div>
+                    </div>
+                    
+                    
+                    
+                </div>
             
-            <div class="d-flex">
-                <p class="vw-100 pt-3 ps-0 fs-3 fst-italic align-self-start text-dark">O que dizem nossos Clientes:</p>
             </div>
-            <div class="d-flex flex-column flex-wrap align-self-center justify-content-evenly" id="card-clientes-container" style="width: 100%">
-                <div class="card mb-3 align-self-center" style="max-width: 540px; width: 100%; ">
-                    <div class="row g-0">
-                      <div class="col-md-4 d-flex align-items-center">
-                        <img src="assets/img/unsplash/christian-buehner-DItYlc26zVI-unsplash.png" class="img-fluid rounded-start" alt="Foto de christian buehner na Unsplash">
-                      </div>
-                      <div class="col-md-8">
-                        <div class="card-body">
-                          <h5 class="card-title">John Doe - CEO Contoso </h5>
-                          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                          <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="card mb-3 align-self-center" style="max-width: 540px; width: 100%; ">
-                    <div class="row g-0">
-                      <div class="col-md-4 d-flex align-items-center" id="card-cliente-only-mobile">
-                        <img src="assets/img/unsplash/erwi-vZurgrIe60w-unsplash.png" class="img-fluid rounded-start" alt="Foto de Erwi na Unsplash">
-                      </div>  
-                      <div class="col-md-8">
-                        <div class="card-body">
-                          <h5 class="card-title">Jane Doe - CFO Contoso </h5>
-                          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                          <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
-                        </div>
-                      </div>
-                      <div class="col-md-4 d-flex align-items-center" id="card-cliente-only-desktop">
-                        <img src="assets/img/unsplash/erwi-vZurgrIe60w-unsplash.png" class="img-fluid rounded-start" alt="Foto de Erwi na Unsplash">
-                      </div>    
-                    </div>
-                  </div>
-
-
-            </div>
-
-        </div>
+        
         
     </section>
 
@@ -442,10 +504,10 @@
     <!-- ************************************ -->
     <section id="contato" class="p-0 container-fluid">
         
-        <div class="d-flex container-fluid info p-0 pt-4 align-items-center " style="">
+        <div class="d-flex container-fluid info p-0 pt-4 align-items-center ">
         
-            <!--form action="https://formsubmit.co/330251a6f5d7581a37cc05c2f46606e9" method="POST" class="mt-3 pt-5" style="width: 30%;" -->
-            <form action="https://formsubmit.co/9e980e1593a0b507cda962cde0004fa3" method="POST" class="mt-3 pt-5" style="width: 30%;">
+            <form action="https://formsubmit.co/330251a6f5d7581a37cc05c2f46606e9" method="POST" class="mt-3 pt-5" style="width: 30%;" >
+            <!--form action="https://formsubmit.co/9e980e1593a0b507cda962cde0004fa3" method="POST" class="mt-3 pt-5" style="width: 30%;"-->
                 <legend style="color: white;">Fale conosco!</legend>
                 <input type="text" class="form-control mb-3" id="floatingInput" placeholder="Nome" name="name" required>
                 <input type="email" class="form-control mb-3" id="floatingInput" placeholder="Email" name="email" required>
@@ -740,6 +802,7 @@
     </section>
     
     </div>
+    <!-- END: Scroll spy -->
 
     </div>
     <script src="https://code.jquery.com/jquery-3.6.3.min.js"

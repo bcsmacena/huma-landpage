@@ -145,6 +145,11 @@
     .card-text{
         font-size: 15px;
     }
+
+    #logos {
+        width: 65vw!important;
+        align-self: center!important;
+    }
 }
 
 #carouselExampleControls {
@@ -157,15 +162,7 @@
     /* background-color: green; */
 }
 
-#carouselExampleControlsSmallScreen {
-    padding-top: 70px;
-    padding-left: 15px;
-    padding-right: 15px;
-    top: 50%;
-    -ms-transform: translateY(-50%);
-    transform: translateY(-50%);
-    /* background-color: green; */
-}
+
 
 .card{
     border: none;
@@ -174,7 +171,7 @@
 }
 
 .carousel-inner{
-    padding: 2em;
+    padding: 0px;
     padding-top: 1em;
 }
 
@@ -209,8 +206,13 @@
     }
     
     .card {
-        margin: 0 .5em;
+        margin: 1em;
         width: calc(100%/3);
+    }
+
+    .card-logos {
+        width: 80%;
+        box-shadow: 0px 1px!important;
     }
     
     .image-wrapper {
@@ -230,11 +232,12 @@
 
     #section-clientes {
         height: 100dvh;
+        width: 75dvw;
     }
 
     #section-clientes > div > p {
-        padding-top: 80px!important;
-        padding-left: 280px!important;
+        /*padding-top: 80px!important;*/
+        /*padding-left: 280px!important;*/
     }
 
     #card-clientes-container {
@@ -278,6 +281,28 @@
     }
 
 
+    #carouselExampleControlsSmallScreen {
+        padding-top: 70px;
+        padding-left: 0px;
+        padding-right: 0px;
+        top: 50%;
+        -ms-transform: translateY(-50%);
+        transform: translateY(-50%);
+        /* background-color: green; */
+    }
+
+    #solucoes-container {
+        padding: 0px;
+    }
+
+    .card {
+        box-shadow: none;
+    }
+
+    .card-logos {
+        margin: 0.5em 3em;
+        box-shadow: 0px 1px ;
+    }
 }
 
 .image-wrapper img {
@@ -295,7 +320,7 @@
 
 #section-clientes::before {    
       content: "";
-      background-image: url(../img/unsplash/alina-grubnyak-ZiQkhI7417A-unsplash.jpg);
+      /*background-image: url(../img/unsplash/alina-grubnyak-ZiQkhI7417A-unsplash.jpg);*/
       
       background-size: cover;
       position: absolute;
