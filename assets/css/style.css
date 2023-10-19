@@ -26,7 +26,7 @@
         background-position-x: 50%;
         background-size: 40%;
         /* background-color:rgb(29,27,41); */
-        height: 100vh;
+        /*height: 100vh;*/
     }
 }
 
@@ -214,6 +214,11 @@
         width: 80%;
         box-shadow: 0px 1px!important;
     }
+
+    .card-logos-empty {
+        width: 80%;
+        box-shadow: 0px 0px!important;
+    }
     
     .image-wrapper {
         height: 22vw;
@@ -231,7 +236,7 @@
     
 
     #section-clientes {
-        height: 100dvh;
+        /*height: 100dvh;*/
         width: 75dvw;
     }
 
@@ -265,6 +270,10 @@
     
 @media screen and (max-width: 577px) {
     .card-solucoes:not(:first-child) {
+        display: none;
+    }
+
+    .card-logos-empty {
         display: none;
     }
 
