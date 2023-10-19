@@ -235,26 +235,26 @@
     
     
 
-    #section-clientes {
+    #section-projetos {
         /*height: 100dvh;*/
         width: 75dvw;
     }
 
-    #section-clientes > div > p {
+    #section-projetos > div > p {
         /*padding-top: 80px!important;*/
         /*padding-left: 280px!important;*/
     }
 
-    #card-clientes-container {
+    #card-projetos-container {
         height: 60%!important;
         width: 60%!important;
         margin-top: 0px;
         
     }
-    #card-clientes-container .card:first-child {
+    #card-projetos-container .card:first-child {
         align-self: flex-start!important;
     }
-    #card-clientes-container .card:last-child {
+    #card-projetos-container .card:last-child {
         align-self: flex-end!important;
     }
 
@@ -321,13 +321,13 @@
 
 
 /********************************************/
-/* CLIENTES * /
+/* projetos * /
 ********************************************/
-#clientes {
+#projetos {
     position: relative;
 }
 
-#section-clientes::before {    
+#section-projetos::before {    
       content: "";
       /*background-image: url(../img/unsplash/alina-grubnyak-ZiQkhI7417A-unsplash.jpg);*/
       
