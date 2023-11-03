@@ -16,6 +16,35 @@
     transform: translateY(-50%);
   }
 
+@media screen and (max-height: 375px){
+    header img {
+        width: 7rem!important;
+    }
+    p {
+        font-size: calc(0.7rem + 1.0vw) !important;
+    }
+    .txtQuemSomos {
+        top: 65%;
+        width: 45%!important;
+    }
+    #solucoes-container {
+        height: 210vh!important;
+    }
+    #contato {
+        height: 200vh!important;
+    }
+    #contato form {
+        width: 50%!important;
+    }
+    .form-check-label p {
+        font-size: calc(0.325rem + 1.0vw) !important;
+    }
+    .card-logos-none {
+        display: none!important;
+    }
+}
+
+
 @media screen and (max-height: 10px) {
     #all-content > * {
         display: none!important;
@@ -273,7 +302,7 @@
         display: none;
     }
 
-    .card-logos-empty {
+    .card-logos-none {
         display: none;
     }
 
@@ -291,7 +320,7 @@
 
 
     #carouselExampleControlsSmallScreen {
-        padding-top: 70px;
+        padding-top: 100px;
         padding-left: 0px;
         padding-right: 0px;
         top: 50%;
