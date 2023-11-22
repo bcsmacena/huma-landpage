@@ -39,9 +39,11 @@
     .form-check-label p {
         font-size: calc(0.325rem + 1.0vw) !important;
     }
-    .card-logos-none {
+    /*
+     .card-logos-none {
         display: none!important;
-    }
+      }
+    */ 
 }
 
 
