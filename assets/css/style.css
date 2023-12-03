@@ -16,6 +16,9 @@
     transform: translateY(-50%);
   }
 
+
+
+
 @media screen and (max-height: 375px){
     header img {
         width: 7rem!important;
@@ -146,6 +149,13 @@
     .card-text{
         font-size: 13px;
     }
+}
+
+@media screen and (min-width: 577px) and (max-width: 768px){
+     .card-logos-none {
+        display: none!important;
+      }
+    
 }
 
 @media all and (min-width: 576px) {
