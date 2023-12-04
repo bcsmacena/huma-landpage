@@ -24,7 +24,10 @@
         width: 7rem!important;
     }
     p {
-        font-size: calc(0.7rem + 1.0vw) !important;
+        font-size: calc(0.7rem + 1.0vw)!important;
+    }
+    .text-diferenciais p {
+        font-size: calc(0.3rem + 1.0vw)!important;
     }
     .txtQuemSomos {
         top: 65%;
@@ -69,6 +72,9 @@
     .txtQuemSomos p {
         font-size: calc(1.125rem + 1.2vw);        
     }
+    .text-diferenciais p {
+        font-size: calc(1.125rem + 1.2vw)!important;        
+    }
     .navbar-toggler {
         margin-top: -10px;
     }
@@ -87,11 +93,17 @@
     .txtQuemSomos p {
         font-size: calc(1.125rem + 1vw);        
     }
+    .text-diferenciais p {
+        font-size: calc(1.125rem + 1vw)!important;        
+    }
 }
 
 @media all and (max-width: 350px) {
     .txtQuemSomos p {
         font-size: calc(1.125rem + 0.8vw);        
+    }
+    .text-diferenciais p {
+        font-size: calc(1.125rem + 0.8vw)!important;        
     }
 }
 
@@ -353,6 +365,15 @@
     .card-logos {
         margin: 0.5em 3em;
         box-shadow: 0px 1px ;
+    }
+
+    .background-diferenciais {
+        display: none;
+    }
+    .text-diferenciais {
+        width: 100dvw!important;
+        padding: 15px!important;
+
     }
 }
 
